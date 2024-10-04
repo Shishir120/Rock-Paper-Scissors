@@ -1,0 +1,134 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    background-color: #F8F4E3;
+}
+
+
+.initial-heading {
+    text-align: center;
+    margin: 20px 0px;
+    color: #65743A;
+}
+
+
+
+/* Main display unit */
+.container {
+    display: flex;
+    height: 30rem;
+    align-items: center;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.choice {
+    margin: 10px 0px;
+    display: inline;
+}
+
+.choice-span {
+    display: inline-block;
+    border-radius: 50%;
+    border: 2px solid;
+}
+
+.choice-span:hover {
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+img {
+    height: 120px;
+    width: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid;
+}
+
+
+
+/* Display what wins what */
+#what-wins-msg-p {
+    height: 2rem;
+    width: 10rem;
+    background-color: #65743A;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    line-height: 30px;
+    visibility: hidden;
+}
+
+.who-wins-msg {
+    height: 3rem;
+    width: 8rem;
+    margin-top: 2rem;
+    
+}
+
+.who-wins-msg-p {
+    background-color: grey;
+    border: 2px solid black;
+    border-radius: 20px;
+    line-height: 3rem;      /* Trick to aligh items vertically by giving same height as parent */
+    text-align: center;
+    color: white;
+    visibility: hidden;
+}
+
+
+
+/* Column showing computer's choice */
+.compChoice-span {
+    border-radius: 50%;
+}
+
+
+
+/* Classes used by JS to add styling */
+.compSelected {
+    border: 2px solid red;
+    background-color: cyan;
+}
+
+.compSelected img {
+    color: red;
+}
+
+
+
+/* Score Display */
+.score {
+    height: 5rem;
+    width: 100vw;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+#user-score {
+    line-height: 3rem;
+    background-color: yellowgreen;
+
+}
+
+#comp-score {
+    line-height: 3rem;
+    background-color: yellowgreen;
+
+}
+
+.user-score-display {
+    background-color: yellowgreen;
+}
+
+.comp-score-display {
+    background-color: yellowgreen;
+}

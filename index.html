@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Rock-Paper-Scissors</title>
+</head>
+
+<body>
+
+    <div class="initial-heading">
+        <h1>Let's Play Rock-Paper-Scissors</h1>
+    </div>
+
+    <main>
+        <div class="container">
+
+            <!-- For user move -->
+            <div class="column">
+
+                <h2>Choose Your move</h2>
+
+                <!-- Paper-img -->
+                <div class="choice">
+                    <span class="choice-span" id="paper">
+                        <img src="sprites/paper.png" alt="paper">
+                    </span>
+                </div>
+
+                <!-- Rock-img -->
+                <div class="choice">
+                    <span class="choice-span" id="rock">
+                        <img src="sprites/rock.png" alt="rock">
+                    </span>
+                </div>
+
+                <!-- Scissors-img -->
+                <div class="choice">
+                    <span class="choice-span" id="scissors">
+                        <img src="sprites/scissors.png" alt="scissors">
+                    </span>
+                </div>
+
+            </div>
+
+
+            <!-- For displaying what wins what -->
+            <div class="column">
+                <p id="what-wins-msg-p"></p>
+
+                <div class="who-wins-msg">
+                    <p class="who-wins-msg-p"></p>
+                </div>
+            </div>
+
+
+            <!-- For computer's move -->
+            <div class="column">
+
+                <h2>Computer's choice</h2>
+
+                <!-- Paper-img -->
+                <div class="choice">
+                    <span class="compChoice-span">
+                        <img src="sprites/paper.png" alt="paper">
+                    </span>
+                </div>
+
+                <!-- Rock-img -->
+                <div class="choice">
+                    <span class="compChoice-span">
+                        <img src="sprites/rock.png" alt="rock">
+                    </span>
+                </div>
+
+                <!-- Scissors-img -->
+                <div class="choice">
+                    <span class="compChoice-span">
+                        <img src="sprites/scissors.png" alt="scissors">
+                    </span>
+                </div>
+
+            </div>
+
+        </div> <!-- End of Container -->
+
+        <!-- Display score -->
+        <div class="score">
+            <p id="user-score">User-Score: <span class="user-score-display"></span></p>
+            <p id="comp-score">Computer-Score: <span class="comp-score-display"></span></p>
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
